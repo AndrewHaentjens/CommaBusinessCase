@@ -78,6 +78,29 @@ class MainViewController: BaseViewController {
     
     @objc private func createPDF() {
         print("Printin..")
+        
+        let nameAlertController = UIAlertController(title: "Project name", message: "Enter the name of your project", preferredStyle: .alert)
+        let submitAction = UIAlertAction(title: "Submit", style: .default) { _ in
+            guard let textField = nameAlertController.textFields?[0], let projectName = textField.text else {
+                return
+            }
+            
+            PDFGen.generatePDF(projectName: projectName)
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
+        
+        nameAlertController.addTextField { (textField: UITextField) in
+            textField.keyboardType = .default
+            textField.autocorrectionType = .default
+            textField.placeholder = "Project name"
+            textField.clearButtonMode = .whileEditing
+        }
+        
+        nameAlertController.addAction(submitAction)
+        nameAlertController.addAction(cancelAction)
+        
+        present(nameAlertController, animated: true, completion: nil)
+        
     }
 
     @IBAction func saveButtonPressed(_ sender: BasicButton) {

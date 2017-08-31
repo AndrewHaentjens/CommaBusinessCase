@@ -27,6 +27,7 @@
 		3B5E0D581F532A13000D7FE9 /* SurveyHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E0D571F532A13000D7FE9 /* SurveyHeaderView.xib */; };
 		3B8D71F11F56FDAA00940F47 /* MainTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D71F01F56FDAA00940F47 /* MainTableViewHeaderView.swift */; };
 		3B8D71F51F5700C100940F47 /* MainTableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B8D71F41F5700C100940F47 /* MainTableViewHeaderView.xib */; };
+		3B8D71F71F58087400940F47 /* PDFGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D71F61F58087400940F47 /* PDFGen.swift */; };
 		3BB29C501F55A44A00BA8945 /* BusinessCaseCanvasDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BB29C4E1F55A44A00BA8945 /* BusinessCaseCanvasDatabase.xcdatamodeld */; };
 		3BB29C521F55A47400BA8945 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB29C511F55A47400BA8945 /* DataModel.swift */; };
 		3BB29C541F55AB1900BA8945 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB29C531F55AB1900BA8945 /* DataController.swift */; };
@@ -54,6 +55,7 @@
 		3B5E0D571F532A13000D7FE9 /* SurveyHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveyHeaderView.xib; sourceTree = "<group>"; };
 		3B8D71F01F56FDAA00940F47 /* MainTableViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewHeaderView.swift; sourceTree = "<group>"; };
 		3B8D71F41F5700C100940F47 /* MainTableViewHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewHeaderView.xib; sourceTree = "<group>"; };
+		3B8D71F61F58087400940F47 /* PDFGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFGen.swift; sourceTree = "<group>"; };
 		3BB29C4F1F55A44A00BA8945 /* BusinessCaseCanvasDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BusinessCaseCanvasDatabase.xcdatamodel; sourceTree = "<group>"; };
 		3BB29C511F55A47400BA8945 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		3BB29C531F55AB1900BA8945 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		3B56421D1F54604B008D736D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3B5642241F5464F8008D736D /* CommaNavigationController.swift */,
 				3B56422B1F556ECD008D736D /* SplashViewController.swift */,
 				3B5642261F546AB5008D736D /* BaseViewController.swift */,
 				3B5E0D421F530712000D7FE9 /* MainViewController.swift */,
@@ -135,7 +138,6 @@
 		3B5E0D3E1F52FFC6000D7FE9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3B5642241F5464F8008D736D /* CommaNavigationController.swift */,
 				3B5642281F546C28008D736D /* Buttons */,
 				3B56421D1F54604B008D736D /* ViewControllers */,
 				3B5E0D541F5329C2000D7FE9 /* TableViewHeaders */,
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				3BB29C531F55AB1900BA8945 /* DataController.swift */,
+				3B8D71F61F58087400940F47 /* PDFGen.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8D71F71F58087400940F47 /* PDFGen.swift in Sources */,
 				3B56422A1F546C42008D736D /* BasicButton.swift in Sources */,
 				3B5E0D481F530972000D7FE9 /* StringExtensions.swift in Sources */,
 				3B5E0D2D1F52FF9A000D7FE9 /* AppDelegate.swift in Sources */,

@@ -30,7 +30,7 @@ class DataController {
             "Metrics".localized
         ]
         
-        let tipsForQ1 = [
+        let tips = [
             "What is the problem? \n Who has the problem? \n Why is it important?",
             "Description of the proposed solution? \n Relate the solution to the problem.",
             "What do we need? \n Who are the key players? \n Who is needed in the company? \n Who is required externally?",
@@ -49,7 +49,7 @@ class DataController {
             
             let businessCase = BusinessCase(entity: entity, insertInto: context)
             businessCase.question = question
-            businessCase.tips = tipsForQ1[index]
+            businessCase.tips = tips[index]
             
             do {
                 try context.save()

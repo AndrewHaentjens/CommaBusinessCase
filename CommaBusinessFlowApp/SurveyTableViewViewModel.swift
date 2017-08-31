@@ -138,7 +138,6 @@ extension SurveyTableViewViewModel: UITableViewDataSource, UITableViewDelegate {
             }
             
             cell.item = nil
-            
             cell.delegate = self
             cell.section = indexPath.section
             cell.navigationController = navigationController
