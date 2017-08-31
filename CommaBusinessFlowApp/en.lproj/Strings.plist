@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Problem</key>
+	<dict>
+		<key>value</key>
+		<string>Problem</string>
+		<key>comment</key>
+		<string>String for Problem entity of business case</string>
+	</dict>
+	<key>Solution</key>
+	<dict>
+		<key>value</key>
+		<string>Solution</string>
+		<key>comment</key>
+		<string>String for Solution entity of business case</string>
+	</dict>
+	<key>Resources</key>
+	<dict>
+		<key>value</key>
+		<string>Resources</string>
+		<key>comment</key>
+		<string>String for Resources entity of business case</string>
+	</dict>
+	<key>Benefits</key>
+	<dict>
+		<key>value</key>
+		<string>Benefits</string>
+		<key>comment</key>
+		<string>String for Benefits entity of business case</string>
+	</dict>
+	<key>Scope</key>
+	<dict>
+		<key>value</key>
+		<string>Scope</string>
+		<key>comment</key>
+		<string>String for Scope entity of business case</string>
+	</dict>
+	<key>Risks</key>
+	<dict>
+		<key>value</key>
+		<string>Risks</string>
+		<key>comment</key>
+		<string>String for Risks entity of business case</string>
+	</dict>
+	<key>Stakeholders</key>
+	<dict>
+		<key>value</key>
+		<string>Stakeholders</string>
+		<key>comment</key>
+		<string>String for Stakeholders entity of business case</string>
+	</dict>
+	<key>Cost Structure</key>
+	<dict>
+		<key>value</key>
+		<string>Cost Structure</string>
+		<key>comment</key>
+		<string>String for Cost Structure entity of business case</string>
+	</dict>
+	<key>Metrics</key>
+	<dict>
+		<key>value</key>
+		<string>Metrics</string>
+		<key>comment</key>
+		<string>String for Metrics entity of business case</string>
+	</dict>
+	<key>Save</key>
+	<dict>
+		<key>value</key>
+		<string>Save</string>
+		<key>comment</key>
+		<string>Generic text for save action</string>
+	</dict>
+	<key>Cancel</key>
+	<dict>
+		<key>value</key>
+		<string>Cancel</string>
+		<key>comment</key>
+		<string>generic text for cancel action</string>
+	</dict>
+	<key>Saved</key>
+	<dict>
+		<key>value</key>
+		<string>Saved!</string>
+		<key>comment</key>
+		<string>Message displayed when save is succesful</string>
+	</dict>
+	<key>Close</key>
+	<dict>
+		<key>value</key>
+		<string>Close</string>
+		<key>comment</key>
+		<string>Default for close buttons</string>
+	</dict>
+	<key>InfoTitle</key>
+	<dict>
+		<key>value</key>
+		<string>More info</string>
+		<key>comment</key>
+		<string>General title for more info dialogue</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		068E18E46DCE9683D23057341B1F2D3F /* TableStyle+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2E5DFB2A0C27A350CF952EB8E87F5 /* TableStyle+Defaults.swift */; };
+		14D4420F4C6AAD1E39F408BBE068298A /* TPPDF-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 096BA37C12BB4B77B78558D496B38691 /* TPPDF-dummy.m */; };
+		4600142CC1FF5868C0B435A174EC67BC /* PageFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB25BE024E9C1C7A55E98EB8445FEC57 /* PageFormat.swift */; };
+		58A0C6986D942E182802AAEA2E5C7FF5 /* PDFGenerator+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3279890CED44DD624508AEC1ABF00C9 /* PDFGenerator+Initialization.swift */; };
+		6092460B43B11A3927A559D18627C4B4 /* PDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD078CF21DE8CFBE241940665695AFE5 /* PDFGenerator.swift */; };
+		6830E5EF4C030BF025266B69709F1218 /* PDFGenerator+DocumentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5977AC729699000E6AF45120408BACF2 /* PDFGenerator+DocumentInfo.swift */; };
+		6CB6907796BC4D82EC7B02B49F7379B8 /* TPPDF-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23BE0B8724758B64B3C5C895960B5074 /* TPPDF-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70725E2DAA14FB18B919231A12BF550A /* Pods-CommaBusinessFlowApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 739975CCF03985E827C32EA426B135B7 /* Pods-CommaBusinessFlowApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71CED89D5940071B093BFD84EFE649A9 /* PDFGenerator+Generation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7B37F3B710D25FB48D9D43B9F606C /* PDFGenerator+Generation.swift */; };
+		7B60D07015492D619222FC4A293CD1BD /* PDFGenerator+Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8700F9A3F6FED72DC02F30F6AA61830A /* PDFGenerator+Lines.swift */; };
+		7C1AA36459B7A9B3E8018E809D1BC679 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AF1FAA35B88DF0027CA511C2C45653 /* Command.swift */; };
+		88869AD7DD63E0806E585E56DA50C18B /* Pods-CommaBusinessFlowApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2872A14B388DEFA11E11B3D8E2AE03 /* Pods-CommaBusinessFlowApp-dummy.m */; };
+		9A20041553B9EFF8E7930622DBD6B91E /* PDFInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87924222BB39F760C08FD410D48B0DD9 /* PDFInfo.swift */; };
+		A7018274F8D250ED98B8B7E336FBB87F /* PDFGenerator+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833D35FA5D4D626396A5FFA40BBB16D3 /* PDFGenerator+Text.swift */; };
+		B43BA7BAA4E4D261D39A8F61867CA1DB /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799451B15914F5E166630D029CDFF69D /* Container.swift */; };
+		B942DBCA832485687EEE281A17C17E29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		C00FC0AD6C8F0D64DD72E119CBD3D360 /* PDFGenerator+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810843F5105DED71DD233247A3AE001 /* PDFGenerator+Image.swift */; };
+		E06BABBCDC01606CFFE43B6856C29C31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		E40D9B88958259D03C87FEDE2A6A0B6B /* PDFGenerator+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7B8F9EB9E05FF862083FB227F7DE90 /* PDFGenerator+Methods.swift */; };
+		E792F2942A6B5BBDE86027E06AE72734 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		ED0DBBD0C54C065805B784FC8DF3EA45 /* TableStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2BD24FAE1BF4CEDBBBBDBDBC647C31 /* TableStyle.swift */; };
+		F2C466DF9184BC8F2FD90B5F6E1F0712 /* PDFGenerator+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1382404A46F4BCBC97975BA589F84E8A /* PDFGenerator+Table.swift */; };
+		F46DDE605082401E4EDEC0D08C0636BA /* PDFGenerator+Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7379CD7223BA9BE09B9A61059602A3AF /* PDFGenerator+Calculations.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74855CE4A36ADCF2E44BE4F48CD9401B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C34DD6AA722972A9D7A1E97419ED823F;
+			remoteInfo = TPPDF;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		096BA37C12BB4B77B78558D496B38691 /* TPPDF-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPPDF-dummy.m"; sourceTree = "<group>"; };
+		0EA59F96C80C0800BB7F025F1A1651B1 /* Pods-CommaBusinessFlowApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CommaBusinessFlowApp.release.xcconfig"; sourceTree = "<group>"; };
+		12AF1FAA35B88DF0027CA511C2C45653 /* Command.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Command.swift; path = Sources/Command.swift; sourceTree = "<group>"; };
+		1372F692EAF52E3F4CBE292186682E8B /* TPPDF.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TPPDF.modulemap; sourceTree = "<group>"; };
+		1382404A46F4BCBC97975BA589F84E8A /* PDFGenerator+Table.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PDFGenerator+Table.swift"; path = "Sources/PDFGenerator+Table.swift"; sourceTree = "<group>"; };
+		23BE0B8724758B64B3C5C895960B5074 /* TPPDF-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPPDF-umbrella.h"; sourceTree = "<group>"; };
+		29E2E5DFB2A0C27A350CF952EB8E87F5 /* TableStyle+Defaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TableStyle+Defaults.swift"; path = "Sources/TableStyle+Defaults.swift"; sourceTree = "<group>"; };
+		2A2BD24FAE1BF4CEDBBBBDBDBC647C31 /* TableStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableStyle.swift; path = Sources/TableStyle.swift; sourceTree = "<group>"; };
+		3D2872A14B388DEFA11E11B3D8E2AE03 /* Pods-CommaBusinessFlowApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CommaBusinessFlowApp-dummy.m"; sourceTree = "<group>"; };
+		3DAEA27BB68B9A8FDBC730A6CF85F4A6 /* Pods-CommaBusinessFlowApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CommaBusinessFlowApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		47DA61DB7BB259FE53CCF14AC6FC10B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B065D7597E5B486C12BA8505A4DEE3 /* Pods-CommaBusinessFlowApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CommaBusinessFlowApp-frameworks.sh"; sourceTree = "<group>"; };
+		5977AC729699000E6AF45120408BACF2 /* PDFGenerator+DocumentInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PDFGenerator+DocumentInfo.swift"; path = "Sources/PDFGenerator+DocumentInfo.swift"; sourceTree = "<group>"; };
+		5B7B8F9EB9E05FF862083FB227F7DE90 /* PDFGenerator+Methods.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PDFGenerator+Methods.swift"; path = "Sources/PDFGenerator+Methods.swift"; sourceTree = "<group>"; };
+		63F7B37F3B710D25FB48D9D43B9F606C /* PDFGenerator+Generation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PDFGenerator+Generation.swift"; path = "Sources/PDFGenerator+Generation.swift"; sourceTree = "<group>"; };
+		685435AEF43753182EE48BF1FF631C68 /* Pods-CommaBusinessFlowApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CommaBusinessFlowApp.modulemap"; sourceTree = "<group>"; };
+		7379CD7223BA9BE09B9A61059602A3AF /* PDFGenerator+Calculations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PDFGenerator+Calculations.swift"; path = "Sources/PDFGenerator+Calculations.swift"; sourceTree = "<group>"; };
+		739975CCF03985E827C32EA426B135B7 /* Pods-CommaBusinessFlowApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CommaBusinessFlowApp-umbrella.h"; sourceTree = "<group>"; };
+		799451B15914F5E166630D029CDFF69D /* Container.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.swift; path = Sources/Container.swift; sourceTree = "<group>"; };
+		7F43147A0CBB91A0917B043F7E84AF41 /* TPPDF-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPPDF-prefix.pch"; sourceTree = "<group>"; };
+		833D35FA5D4D626396A5FFA40BBB16D3 /* PDFGenerator+Text.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PDFGenerator+Text.swift"; path = "Sources/PDFGenerator+Text.swift"; sourceTree = "<group>"; };
+		8700F9A3F6FED72DC02F30F6AA61830A /* PDFGenerator+Lines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PDFGenerator+Lines.swift"; path = "Sources/PDFGenerator+Lines.swift"; sourceTree = "<group>"; };
+		87924222BB39F760C08FD410D48B0DD9 /* PDFInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFInfo.swift; path = Sources/PDFInfo.swift; sourceTree = "<group>"; };
+		8CE727D24EDE5C6B8A6E548D6543981D /* Pods-CommaBusinessFlowApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CommaBusinessFlowApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		8E67667579342B57ACF48673EE0E5EF3 /* TPPDF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPPDF.framework; path = TPPDF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92612274C5C741E0B501AFA1893983D4 /* Pods_CommaBusinessFlowApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CommaBusinessFlowApp.framework; path = "Pods-CommaBusinessFlowApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A192022965227B0A4B6BF5A8FCA12674 /* Pods-CommaBusinessFlowApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CommaBusinessFlowApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A810843F5105DED71DD233247A3AE001 /* PDFGenerator+Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PDFGenerator+Image.swift"; path = "Sources/PDFGenerator+Image.swift"; sourceTree = "<group>"; };
+		ACBFB2BC85F9CA9354C4B8FBD1BD4CBB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3279890CED44DD624508AEC1ABF00C9 /* PDFGenerator+Initialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PDFGenerator+Initialization.swift"; path = "Sources/PDFGenerator+Initialization.swift"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B838807703B4BEDD12D32E884D7D54BB /* Pods-CommaBusinessFlowApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CommaBusinessFlowApp-resources.sh"; sourceTree = "<group>"; };
+		CAEF1E0DCBAAF2E64B9E88CE93027F33 /* TPPDF.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPPDF.xcconfig; sourceTree = "<group>"; };
+		CD078CF21DE8CFBE241940665695AFE5 /* PDFGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFGenerator.swift; path = Sources/PDFGenerator.swift; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FB25BE024E9C1C7A55E98EB8445FEC57 /* PageFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageFormat.swift; path = Sources/PageFormat.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62A5E74F7E6E7656D4A48C3AE3831070 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B942DBCA832485687EEE281A17C17E29 /* Foundation.framework in Frameworks */,
+				E792F2942A6B5BBDE86027E06AE72734 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5A77E1F83B5ADEE3B45ABDB0B3B27F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06BABBCDC01606CFFE43B6856C29C31 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BF1C4ACB92E9529BFE521CBD5F331A8 /* TPPDF */ = {
+			isa = PBXGroup;
+			children = (
+				12AF1FAA35B88DF0027CA511C2C45653 /* Command.swift */,
+				799451B15914F5E166630D029CDFF69D /* Container.swift */,
+				FB25BE024E9C1C7A55E98EB8445FEC57 /* PageFormat.swift */,
+				CD078CF21DE8CFBE241940665695AFE5 /* PDFGenerator.swift */,
+				7379CD7223BA9BE09B9A61059602A3AF /* PDFGenerator+Calculations.swift */,
+				5977AC729699000E6AF45120408BACF2 /* PDFGenerator+DocumentInfo.swift */,
+				63F7B37F3B710D25FB48D9D43B9F606C /* PDFGenerator+Generation.swift */,
+				A810843F5105DED71DD233247A3AE001 /* PDFGenerator+Image.swift */,
+				B3279890CED44DD624508AEC1ABF00C9 /* PDFGenerator+Initialization.swift */,
+				8700F9A3F6FED72DC02F30F6AA61830A /* PDFGenerator+Lines.swift */,
+				5B7B8F9EB9E05FF862083FB227F7DE90 /* PDFGenerator+Methods.swift */,
+				1382404A46F4BCBC97975BA589F84E8A /* PDFGenerator+Table.swift */,
+				833D35FA5D4D626396A5FFA40BBB16D3 /* PDFGenerator+Text.swift */,
+				87924222BB39F760C08FD410D48B0DD9 /* PDFInfo.swift */,
+				2A2BD24FAE1BF4CEDBBBBDBDBC647C31 /* TableStyle.swift */,
+				29E2E5DFB2A0C27A350CF952EB8E87F5 /* TableStyle+Defaults.swift */,
+				340EFD7BCFF0F517933F6A26971059F5 /* Support Files */,
+			);
+			name = TPPDF;
+			path = TPPDF;
+			sourceTree = "<group>";
+		};
+		340EFD7BCFF0F517933F6A26971059F5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACBFB2BC85F9CA9354C4B8FBD1BD4CBB /* Info.plist */,
+				1372F692EAF52E3F4CBE292186682E8B /* TPPDF.modulemap */,
+				CAEF1E0DCBAAF2E64B9E88CE93027F33 /* TPPDF.xcconfig */,
+				096BA37C12BB4B77B78558D496B38691 /* TPPDF-dummy.m */,
+				7F43147A0CBB91A0917B043F7E84AF41 /* TPPDF-prefix.pch */,
+				23BE0B8724758B64B3C5C895960B5074 /* TPPDF-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TPPDF";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5101085E521E5FBD4C2A4B6C33589698 /* Pods-CommaBusinessFlowApp */ = {
+			isa = PBXGroup;
+			children = (
+				47DA61DB7BB259FE53CCF14AC6FC10B8 /* Info.plist */,
+				685435AEF43753182EE48BF1FF631C68 /* Pods-CommaBusinessFlowApp.modulemap */,
+				3DAEA27BB68B9A8FDBC730A6CF85F4A6 /* Pods-CommaBusinessFlowApp-acknowledgements.markdown */,
+				8CE727D24EDE5C6B8A6E548D6543981D /* Pods-CommaBusinessFlowApp-acknowledgements.plist */,
+				3D2872A14B388DEFA11E11B3D8E2AE03 /* Pods-CommaBusinessFlowApp-dummy.m */,
+				48B065D7597E5B486C12BA8505A4DEE3 /* Pods-CommaBusinessFlowApp-frameworks.sh */,
+				B838807703B4BEDD12D32E884D7D54BB /* Pods-CommaBusinessFlowApp-resources.sh */,
+				739975CCF03985E827C32EA426B135B7 /* Pods-CommaBusinessFlowApp-umbrella.h */,
+				A192022965227B0A4B6BF5A8FCA12674 /* Pods-CommaBusinessFlowApp.debug.xcconfig */,
+				0EA59F96C80C0800BB7F025F1A1651B1 /* Pods-CommaBusinessFlowApp.release.xcconfig */,
+			);
+			name = "Pods-CommaBusinessFlowApp";
+			path = "Target Support Files/Pods-CommaBusinessFlowApp";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				DD4081519FE008634812763D4AE2BE69 /* Pods */,
+				D0D09960D7EA7FB7DA08912F7C7E99D9 /* Products */,
+				DCC00F7724250F04BF544B3B35B25DBC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D0D09960D7EA7FB7DA08912F7C7E99D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92612274C5C741E0B501AFA1893983D4 /* Pods_CommaBusinessFlowApp.framework */,
+				8E67667579342B57ACF48673EE0E5EF3 /* TPPDF.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCC00F7724250F04BF544B3B35B25DBC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5101085E521E5FBD4C2A4B6C33589698 /* Pods-CommaBusinessFlowApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DD4081519FE008634812763D4AE2BE69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BF1C4ACB92E9529BFE521CBD5F331A8 /* TPPDF */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1849B0E8BF6D240B67DD3743D81950B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB6907796BC4D82EC7B02B49F7379B8 /* TPPDF-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E3BAAE1483AACFD316E41AD501B276D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70725E2DAA14FB18B919231A12BF550A /* Pods-CommaBusinessFlowApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C34DD6AA722972A9D7A1E97419ED823F /* TPPDF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 028528568FD732D4C3D4C1949C865958 /* Build configuration list for PBXNativeTarget "TPPDF" */;
+			buildPhases = (
+				3B57E420ED371EE567B6123807592F71 /* Sources */,
+				62A5E74F7E6E7656D4A48C3AE3831070 /* Frameworks */,
+				1849B0E8BF6D240B67DD3743D81950B7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPPDF;
+			productName = TPPDF;
+			productReference = 8E67667579342B57ACF48673EE0E5EF3 /* TPPDF.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CFAE65ECF7E0D3AB37942595008AFE31 /* Pods-CommaBusinessFlowApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEE2C658B956E3523C24BD41C648D7EC /* Build configuration list for PBXNativeTarget "Pods-CommaBusinessFlowApp" */;
+			buildPhases = (
+				E31DAD77103D936208F3DCAD333C60C8 /* Sources */,
+				D5A77E1F83B5ADEE3B45ABDB0B3B27F9 /* Frameworks */,
+				3E3BAAE1483AACFD316E41AD501B276D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B652FEBA2EB06CCAB01EDAE25B5600B /* PBXTargetDependency */,
+			);
+			name = "Pods-CommaBusinessFlowApp";
+			productName = "Pods-CommaBusinessFlowApp";
+			productReference = 92612274C5C741E0B501AFA1893983D4 /* Pods_CommaBusinessFlowApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D0D09960D7EA7FB7DA08912F7C7E99D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFAE65ECF7E0D3AB37942595008AFE31 /* Pods-CommaBusinessFlowApp */,
+				C34DD6AA722972A9D7A1E97419ED823F /* TPPDF */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B57E420ED371EE567B6123807592F71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1AA36459B7A9B3E8018E809D1BC679 /* Command.swift in Sources */,
+				B43BA7BAA4E4D261D39A8F61867CA1DB /* Container.swift in Sources */,
+				4600142CC1FF5868C0B435A174EC67BC /* PageFormat.swift in Sources */,
+				F46DDE605082401E4EDEC0D08C0636BA /* PDFGenerator+Calculations.swift in Sources */,
+				6830E5EF4C030BF025266B69709F1218 /* PDFGenerator+DocumentInfo.swift in Sources */,
+				71CED89D5940071B093BFD84EFE649A9 /* PDFGenerator+Generation.swift in Sources */,
+				C00FC0AD6C8F0D64DD72E119CBD3D360 /* PDFGenerator+Image.swift in Sources */,
+				58A0C6986D942E182802AAEA2E5C7FF5 /* PDFGenerator+Initialization.swift in Sources */,
+				7B60D07015492D619222FC4A293CD1BD /* PDFGenerator+Lines.swift in Sources */,
+				E40D9B88958259D03C87FEDE2A6A0B6B /* PDFGenerator+Methods.swift in Sources */,
+				F2C466DF9184BC8F2FD90B5F6E1F0712 /* PDFGenerator+Table.swift in Sources */,
+				A7018274F8D250ED98B8B7E336FBB87F /* PDFGenerator+Text.swift in Sources */,
+				6092460B43B11A3927A559D18627C4B4 /* PDFGenerator.swift in Sources */,
+				9A20041553B9EFF8E7930622DBD6B91E /* PDFInfo.swift in Sources */,
+				068E18E46DCE9683D23057341B1F2D3F /* TableStyle+Defaults.swift in Sources */,
+				ED0DBBD0C54C065805B784FC8DF3EA45 /* TableStyle.swift in Sources */,
+				14D4420F4C6AAD1E39F408BBE068298A /* TPPDF-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E31DAD77103D936208F3DCAD333C60C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88869AD7DD63E0806E585E56DA50C18B /* Pods-CommaBusinessFlowApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B652FEBA2EB06CCAB01EDAE25B5600B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPPDF;
+			target = C34DD6AA722972A9D7A1E97419ED823F /* TPPDF */;
+			targetProxy = 74855CE4A36ADCF2E44BE4F48CD9401B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2DDE750F91024877877639AF4041D1D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAEF1E0DCBAAF2E64B9E88CE93027F33 /* TPPDF.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPPDF/TPPDF-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPPDF/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPPDF/TPPDF.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TPPDF;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		334C6D98511BEAC9C23A29AE1697A61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAEF1E0DCBAAF2E64B9E88CE93027F33 /* TPPDF.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPPDF/TPPDF-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPPDF/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPPDF/TPPDF.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TPPDF;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3D0A462EAB8C7E3AA96FE2CD368FF310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A192022965227B0A4B6BF5A8FCA12674 /* Pods-CommaBusinessFlowApp.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CommaBusinessFlowApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CommaBusinessFlowApp/Pods-CommaBusinessFlowApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CommaBusinessFlowApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		80152AEE63AF34422F91541B0190112F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EA59F96C80C0800BB7F025F1A1651B1 /* Pods-CommaBusinessFlowApp.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CommaBusinessFlowApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CommaBusinessFlowApp/Pods-CommaBusinessFlowApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CommaBusinessFlowApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		028528568FD732D4C3D4C1949C865958 /* Build configuration list for PBXNativeTarget "TPPDF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				334C6D98511BEAC9C23A29AE1697A61D /* Debug */,
+				2DDE750F91024877877639AF4041D1D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEE2C658B956E3523C24BD41C648D7EC /* Build configuration list for PBXNativeTarget "Pods-CommaBusinessFlowApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D0A462EAB8C7E3AA96FE2CD368FF310 /* Debug */,
+				80152AEE63AF34422F91541B0190112F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VMX-N6-4qd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="CommaBusinessFlowApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="166" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cNr-oG-T3T">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="545"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="openQuestionsCell" rowHeight="166" id="fx6-2t-ioh" customClass="OpenQuestionTableViewCell" customModule="CommaBusinessFlowApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="166"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fx6-2t-ioh" id="tIU-Lo-MRN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="165.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="taU-hc-KJJ">
+                                                    <rect key="frame" x="32" y="8" width="281" height="150"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="iqw-hd-1my"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ba-SF-TWY">
+                                                    <rect key="frame" x="321" y="16" width="22" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="4ba-SF-TWY" secondAttribute="height" multiplier="1:1" id="m6O-jQ-Ygr"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <action selector="infoButtonPressedWithSender:" destination="fx6-2t-ioh" eventType="touchUpInside" id="Bq3-yb-MAb"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="4ba-SF-TWY" secondAttribute="trailing" constant="24" id="IHo-rn-vp0"/>
+                                                <constraint firstItem="4ba-SF-TWY" firstAttribute="leading" secondItem="taU-hc-KJJ" secondAttribute="trailing" constant="8" id="Jdq-jn-VOS"/>
+                                                <constraint firstItem="4ba-SF-TWY" firstAttribute="top" secondItem="tIU-Lo-MRN" secondAttribute="topMargin" constant="8" id="UQJ-hC-1u5"/>
+                                                <constraint firstItem="taU-hc-KJJ" firstAttribute="top" secondItem="tIU-Lo-MRN" secondAttribute="topMargin" id="agG-Xl-JMC"/>
+                                                <constraint firstAttribute="bottom" secondItem="taU-hc-KJJ" secondAttribute="bottom" constant="8" id="cEF-Ns-GCQ"/>
+                                                <constraint firstItem="taU-hc-KJJ" firstAttribute="leading" secondItem="tIU-Lo-MRN" secondAttribute="leadingMargin" constant="24" id="edT-0Q-myK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="answerTextView" destination="taU-hc-KJJ" id="4lS-x6-wiJ"/>
+                                            <outlet property="infoButton" destination="4ba-SF-TWY" id="bUL-H9-Ya0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyf-Jy-r2K" customClass="BasicButton" customModule="CommaBusinessFlowApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="553" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UXf-tp-hRL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3K7-dq-h0P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tyf-Jy-r2K" secondAttribute="bottom" constant="20" id="4xI-2r-OeH"/>
+                            <constraint firstItem="Tyf-Jy-r2K" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="96O-gL-t5i"/>
+                            <constraint firstItem="Tyf-Jy-r2K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LRU-eN-55Y"/>
+                            <constraint firstAttribute="trailing" secondItem="cNr-oG-T3T" secondAttribute="trailing" id="OaV-PH-4ed"/>
+                            <constraint firstItem="Tyf-Jy-r2K" firstAttribute="top" secondItem="cNr-oG-T3T" secondAttribute="bottom" constant="8" id="QFS-Rw-kZk"/>
+                            <constraint firstItem="cNr-oG-T3T" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="WNJ-Md-dwo"/>
+                            <constraint firstItem="cNr-oG-T3T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eHw-L8-s3O"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="5nb-WU-2tC"/>
+                    <connections>
+                        <outlet property="saveButton" destination="Tyf-Jy-r2K" id="wvX-QH-8gr"/>
+                        <outlet property="surveyTableView" destination="cNr-oG-T3T" id="5Ie-wE-0en"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="eHr-QI-gJd">
+            <objects>
+                <viewController id="VMX-N6-4qd" customClass="SplashViewController" customModule="CommaBusinessFlowApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HiM-tx-Yvb"/>
+                        <viewControllerLayoutGuide type="bottom" id="fFD-dz-o0n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dsY-DK-xRx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CommaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="JqG-mu-qax">
+                                <rect key="frame" x="16" y="76" width="343" height="535"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fFD-dz-o0n" firstAttribute="top" secondItem="JqG-mu-qax" secondAttribute="bottom" constant="56" id="KQ0-Wd-43V"/>
+                            <constraint firstItem="JqG-mu-qax" firstAttribute="leading" secondItem="dsY-DK-xRx" secondAttribute="leadingMargin" id="jVv-lF-NVd"/>
+                            <constraint firstItem="JqG-mu-qax" firstAttribute="top" secondItem="HiM-tx-Yvb" secondAttribute="bottom" constant="56" id="tkU-js-A0t"/>
+                            <constraint firstItem="JqG-mu-qax" firstAttribute="trailing" secondItem="dsY-DK-xRx" secondAttribute="trailingMargin" id="zr2-NP-syc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="FVJ-wR-ooR" kind="show" identifier="launch" action="showDetailViewController:sender:" id="Kqi-d6-2e1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OAY-sL-N1k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-759.20000000000005" y="138.98050974512745"/>
+        </scene>
+        <!--Comma Navigation Controller-->
+        <scene sceneID="n21-IQ-Syb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FVJ-wR-ooR" customClass="CommaNavigationController" customModule="CommaBusinessFlowApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eq3-dV-E8F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bqy-gU-x1J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mPC-CW-9Mg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CommaLogo" width="280" height="80"/>
+    </resources>
+</document>

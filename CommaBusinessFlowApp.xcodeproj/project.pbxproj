@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17C6BAF6903C113D1234F3B9 /* Pods_CommaBusinessFlowApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04AC34C273301D3A97DCD37 /* Pods_CommaBusinessFlowApp.framework */; };
+		3B56421C1F545FC9008D736D /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B56421B1F545FC9008D736D /* ColorExtensions.swift */; };
+		3B5642251F5464F8008D736D /* CommaNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5642241F5464F8008D736D /* CommaNavigationController.swift */; };
+		3B5642271F546AB5008D736D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5642261F546AB5008D736D /* BaseViewController.swift */; };
+		3B56422A1F546C42008D736D /* BasicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5642291F546C42008D736D /* BasicButton.swift */; };
+		3B56422C1F556ECD008D736D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B56422B1F556ECD008D736D /* SplashViewController.swift */; };
+		3B56422F1F557B5F008D736D /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B56422E1F557B5F008D736D /* ViewControllerExtensions.swift */; };
+		3B5E0D2D1F52FF9A000D7FE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E0D2C1F52FF9A000D7FE9 /* AppDelegate.swift */; };
+		3B5E0D321F52FF9A000D7FE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E0D301F52FF9A000D7FE9 /* Main.storyboard */; };
+		3B5E0D341F52FF9A000D7FE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E0D331F52FF9A000D7FE9 /* Assets.xcassets */; };
+		3B5E0D371F52FF9A000D7FE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E0D351F52FF9A000D7FE9 /* LaunchScreen.storyboard */; };
+		3B5E0D431F530712000D7FE9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E0D421F530712000D7FE9 /* MainViewController.swift */; };
+		3B5E0D481F530972000D7FE9 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E0D471F530972000D7FE9 /* StringExtensions.swift */; };
+		3B5E0D4C1F530A52000D7FE9 /* Strings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E0D4E1F530A52000D7FE9 /* Strings.plist */; };
+		3B5E0D501F5310A1000D7FE9 /* SurveyTableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E0D4F1F5310A1000D7FE9 /* SurveyTableViewViewModel.swift */; };
+		3B5E0D521F531AD9000D7FE9 /* OpenQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E0D511F531AD9000D7FE9 /* OpenQuestionTableViewCell.swift */; };
+		3B5E0D561F5329EB000D7FE9 /* SurveyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E0D551F5329EB000D7FE9 /* SurveyHeaderView.swift */; };
+		3B5E0D581F532A13000D7FE9 /* SurveyHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5E0D571F532A13000D7FE9 /* SurveyHeaderView.xib */; };
+		3B8D71F11F56FDAA00940F47 /* MainTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D71F01F56FDAA00940F47 /* MainTableViewHeaderView.swift */; };
+		3B8D71F51F5700C100940F47 /* MainTableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B8D71F41F5700C100940F47 /* MainTableViewHeaderView.xib */; };
+		3BB29C501F55A44A00BA8945 /* BusinessCaseCanvasDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BB29C4E1F55A44A00BA8945 /* BusinessCaseCanvasDatabase.xcdatamodeld */; };
+		3BB29C521F55A47400BA8945 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB29C511F55A47400BA8945 /* DataModel.swift */; };
+		3BB29C541F55AB1900BA8945 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB29C531F55AB1900BA8945 /* DataController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B56421B1F545FC9008D736D /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		3B5642241F5464F8008D736D /* CommaNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommaNavigationController.swift; sourceTree = "<group>"; };
+		3B5642261F546AB5008D736D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3B5642291F546C42008D736D /* BasicButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicButton.swift; sourceTree = "<group>"; };
+		3B56422B1F556ECD008D736D /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		3B56422E1F557B5F008D736D /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		3B5E0D291F52FF9A000D7FE9 /* CommaBusinessFlowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommaBusinessFlowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5E0D2C1F52FF9A000D7FE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B5E0D311F52FF9A000D7FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B5E0D331F52FF9A000D7FE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B5E0D361F52FF9A000D7FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B5E0D381F52FF9A000D7FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B5E0D421F530712000D7FE9 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3B5E0D471F530972000D7FE9 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		3B5E0D4D1F530A52000D7FE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Strings.plist; sourceTree = "<group>"; };
+		3B5E0D4F1F5310A1000D7FE9 /* SurveyTableViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTableViewViewModel.swift; sourceTree = "<group>"; };
+		3B5E0D511F531AD9000D7FE9 /* OpenQuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenQuestionTableViewCell.swift; sourceTree = "<group>"; };
+		3B5E0D551F5329EB000D7FE9 /* SurveyHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyHeaderView.swift; sourceTree = "<group>"; };
+		3B5E0D571F532A13000D7FE9 /* SurveyHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveyHeaderView.xib; sourceTree = "<group>"; };
+		3B8D71F01F56FDAA00940F47 /* MainTableViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewHeaderView.swift; sourceTree = "<group>"; };
+		3B8D71F41F5700C100940F47 /* MainTableViewHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewHeaderView.xib; sourceTree = "<group>"; };
+		3BB29C4F1F55A44A00BA8945 /* BusinessCaseCanvasDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BusinessCaseCanvasDatabase.xcdatamodel; sourceTree = "<group>"; };
+		3BB29C511F55A47400BA8945 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		3BB29C531F55AB1900BA8945 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		3D96995C79B59615CB978FDA /* Pods-CommaBusinessFlowApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommaBusinessFlowApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommaBusinessFlowApp/Pods-CommaBusinessFlowApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A31FB9AAA84AC411C85B54A1 /* Pods-CommaBusinessFlowApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommaBusinessFlowApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommaBusinessFlowApp/Pods-CommaBusinessFlowApp.release.xcconfig"; sourceTree = "<group>"; };
+		F04AC34C273301D3A97DCD37 /* Pods_CommaBusinessFlowApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommaBusinessFlowApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B5E0D261F52FF9A000D7FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C6BAF6903C113D1234F3B9 /* Pods_CommaBusinessFlowApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B56421D1F54604B008D736D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B56422B1F556ECD008D736D /* SplashViewController.swift */,
+				3B5642261F546AB5008D736D /* BaseViewController.swift */,
+				3B5E0D421F530712000D7FE9 /* MainViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3B5642281F546C28008D736D /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3B5642291F546C42008D736D /* BasicButton.swift */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		3B56422D1F5574DD008D736D /* TableViewFooters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TableViewFooters;
+			sourceTree = "<group>";
+		};
+		3B5E0D201F52FF9A000D7FE9 = {
+			isa = PBXGroup;
+			children = (
+				3B5E0D2B1F52FF9A000D7FE9 /* CommaBusinessFlowApp */,
+				3B5E0D2A1F52FF9A000D7FE9 /* Products */,
+				D176841E01C9249C3038F9C8 /* Pods */,
+				69717CE1D8BC0052EB983B4E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B5E0D2A1F52FF9A000D7FE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B5E0D291F52FF9A000D7FE9 /* CommaBusinessFlowApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B5E0D2B1F52FF9A000D7FE9 /* CommaBusinessFlowApp */ = {
+			isa = PBXGroup;
+			children = (
+				3B5E0D2C1F52FF9A000D7FE9 /* AppDelegate.swift */,
+				3BB29C4D1F55A42500BA8945 /* Database */,
+				3B5E0D461F53095A000D7FE9 /* extensions */,
+				3B5E0D3F1F52FFDB000D7FE9 /* Models */,
+				3B5E0D401F52FFF2000D7FE9 /* ViewModels */,
+				3B5E0D3E1F52FFC6000D7FE9 /* Views */,
+				3B5E0D411F5305C3000D7FE9 /* Storyboards */,
+				3B5E0D491F530A01000D7FE9 /* Resources */,
+			);
+			path = CommaBusinessFlowApp;
+			sourceTree = "<group>";
+		};
+		3B5E0D3E1F52FFC6000D7FE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B5642241F5464F8008D736D /* CommaNavigationController.swift */,
+				3B5642281F546C28008D736D /* Buttons */,
+				3B56421D1F54604B008D736D /* ViewControllers */,
+				3B5E0D541F5329C2000D7FE9 /* TableViewHeaders */,
+				3B56422D1F5574DD008D736D /* TableViewFooters */,
+				3B5E0D531F5329B8000D7FE9 /* TableViewCells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3B5E0D3F1F52FFDB000D7FE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3BB29C531F55AB1900BA8945 /* DataController.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3B5E0D401F52FFF2000D7FE9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3B5E0D4F1F5310A1000D7FE9 /* SurveyTableViewViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		3B5E0D411F5305C3000D7FE9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3B5E0D351F52FF9A000D7FE9 /* LaunchScreen.storyboard */,
+				3B5E0D301F52FF9A000D7FE9 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		3B5E0D461F53095A000D7FE9 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3B5E0D471F530972000D7FE9 /* StringExtensions.swift */,
+				3B56421B1F545FC9008D736D /* ColorExtensions.swift */,
+				3B56422E1F557B5F008D736D /* ViewControllerExtensions.swift */,
+			);
+			name = extensions;
+			sourceTree = "<group>";
+		};
+		3B5E0D491F530A01000D7FE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B5E0D331F52FF9A000D7FE9 /* Assets.xcassets */,
+				3B5E0D381F52FF9A000D7FE9 /* Info.plist */,
+				3B5E0D4E1F530A52000D7FE9 /* Strings.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3B5E0D531F5329B8000D7FE9 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				3B5E0D511F531AD9000D7FE9 /* OpenQuestionTableViewCell.swift */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		3B5E0D541F5329C2000D7FE9 /* TableViewHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				3B5E0D551F5329EB000D7FE9 /* SurveyHeaderView.swift */,
+				3B5E0D571F532A13000D7FE9 /* SurveyHeaderView.xib */,
+				3B8D71F01F56FDAA00940F47 /* MainTableViewHeaderView.swift */,
+				3B8D71F41F5700C100940F47 /* MainTableViewHeaderView.xib */,
+			);
+			name = TableViewHeaders;
+			sourceTree = "<group>";
+		};
+		3BB29C4D1F55A42500BA8945 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				3BB29C4E1F55A44A00BA8945 /* BusinessCaseCanvasDatabase.xcdatamodeld */,
+				3BB29C511F55A47400BA8945 /* DataModel.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		69717CE1D8BC0052EB983B4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F04AC34C273301D3A97DCD37 /* Pods_CommaBusinessFlowApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D176841E01C9249C3038F9C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D96995C79B59615CB978FDA /* Pods-CommaBusinessFlowApp.debug.xcconfig */,
+				A31FB9AAA84AC411C85B54A1 /* Pods-CommaBusinessFlowApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B5E0D281F52FF9A000D7FE9 /* CommaBusinessFlowApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B5E0D3B1F52FF9A000D7FE9 /* Build configuration list for PBXNativeTarget "CommaBusinessFlowApp" */;
+			buildPhases = (
+				4626B31CDDEF763718DA0941 /* [CP] Check Pods Manifest.lock */,
+				3B5E0D251F52FF9A000D7FE9 /* Sources */,
+				3B5E0D261F52FF9A000D7FE9 /* Frameworks */,
+				3B5E0D271F52FF9A000D7FE9 /* Resources */,
+				C3261023E46794BC655EC091 /* [CP] Embed Pods Frameworks */,
+				A98630CF99E7F094FB2B490B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommaBusinessFlowApp;
+			productName = CommaBusinessFlowApp;
+			productReference = 3B5E0D291F52FF9A000D7FE9 /* CommaBusinessFlowApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B5E0D211F52FF9A000D7FE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Comma;
+				TargetAttributes = {
+					3B5E0D281F52FF9A000D7FE9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2565XKN57Z;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3B5E0D241F52FF9A000D7FE9 /* Build configuration list for PBXProject "CommaBusinessFlowApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B5E0D201F52FF9A000D7FE9;
+			productRefGroup = 3B5E0D2A1F52FF9A000D7FE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B5E0D281F52FF9A000D7FE9 /* CommaBusinessFlowApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B5E0D271F52FF9A000D7FE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B8D71F51F5700C100940F47 /* MainTableViewHeaderView.xib in Resources */,
+				3B5E0D371F52FF9A000D7FE9 /* LaunchScreen.storyboard in Resources */,
+				3B5E0D4C1F530A52000D7FE9 /* Strings.plist in Resources */,
+				3B5E0D341F52FF9A000D7FE9 /* Assets.xcassets in Resources */,
+				3B5E0D581F532A13000D7FE9 /* SurveyHeaderView.xib in Resources */,
+				3B5E0D321F52FF9A000D7FE9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4626B31CDDEF763718DA0941 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A98630CF99E7F094FB2B490B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommaBusinessFlowApp/Pods-CommaBusinessFlowApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3261023E46794BC655EC091 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommaBusinessFlowApp/Pods-CommaBusinessFlowApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B5E0D251F52FF9A000D7FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B56422A1F546C42008D736D /* BasicButton.swift in Sources */,
+				3B5E0D481F530972000D7FE9 /* StringExtensions.swift in Sources */,
+				3B5E0D2D1F52FF9A000D7FE9 /* AppDelegate.swift in Sources */,
+				3B56422F1F557B5F008D736D /* ViewControllerExtensions.swift in Sources */,
+				3B8D71F11F56FDAA00940F47 /* MainTableViewHeaderView.swift in Sources */,
+				3B56422C1F556ECD008D736D /* SplashViewController.swift in Sources */,
+				3BB29C521F55A47400BA8945 /* DataModel.swift in Sources */,
+				3B5E0D501F5310A1000D7FE9 /* SurveyTableViewViewModel.swift in Sources */,
+				3B5642251F5464F8008D736D /* CommaNavigationController.swift in Sources */,
+				3B5E0D561F5329EB000D7FE9 /* SurveyHeaderView.swift in Sources */,
+				3B5642271F546AB5008D736D /* BaseViewController.swift in Sources */,
+				3BB29C541F55AB1900BA8945 /* DataController.swift in Sources */,
+				3BB29C501F55A44A00BA8945 /* BusinessCaseCanvasDatabase.xcdatamodeld in Sources */,
+				3B5E0D431F530712000D7FE9 /* MainViewController.swift in Sources */,
+				3B5E0D521F531AD9000D7FE9 /* OpenQuestionTableViewCell.swift in Sources */,
+				3B56421C1F545FC9008D736D /* ColorExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3B5E0D301F52FF9A000D7FE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B5E0D311F52FF9A000D7FE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B5E0D351F52FF9A000D7FE9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B5E0D361F52FF9A000D7FE9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3B5E0D4E1F530A52000D7FE9 /* Strings.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B5E0D4D1F530A52000D7FE9 /* en */,
+			);
+			name = Strings.plist;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B5E0D391F52FF9A000D7FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B5E0D3A1F52FF9A000D7FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B5E0D3C1F52FF9A000D7FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D96995C79B59615CB978FDA /* Pods-CommaBusinessFlowApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2565XKN57Z;
+				INFOPLIST_FILE = CommaBusinessFlowApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = be.comma.CommaBusinessCaseCanvasApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3B5E0D3D1F52FF9A000D7FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A31FB9AAA84AC411C85B54A1 /* Pods-CommaBusinessFlowApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2565XKN57Z;
+				INFOPLIST_FILE = CommaBusinessFlowApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = be.comma.CommaBusinessCaseCanvasApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B5E0D241F52FF9A000D7FE9 /* Build configuration list for PBXProject "CommaBusinessFlowApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B5E0D391F52FF9A000D7FE9 /* Debug */,
+				3B5E0D3A1F52FF9A000D7FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B5E0D3B1F52FF9A000D7FE9 /* Build configuration list for PBXNativeTarget "CommaBusinessFlowApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B5E0D3C1F52FF9A000D7FE9 /* Debug */,
+				3B5E0D3D1F52FF9A000D7FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3BB29C4E1F55A44A00BA8945 /* BusinessCaseCanvasDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3BB29C4F1F55A44A00BA8945 /* BusinessCaseCanvasDatabase.xcdatamodel */,
+			);
+			currentVersion = 3BB29C4F1F55A44A00BA8945 /* BusinessCaseCanvasDatabase.xcdatamodel */;
+			path = BusinessCaseCanvasDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3B5E0D211F52FF9A000D7FE9 /* Project object */;
+}
